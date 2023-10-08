@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var options = document.querySelectorAll('input[type="radio"]');
     
-    checkboxes.forEach(function (checkbox) {
-        checkbox.addEventListener("change", function () {
+    options.forEach(function (option) {
+        option.addEventListener("change", function () {
             if (this.checked) {
-                alert("You clicked " + this.id);
+                alert("You selected: " + this.value);
             }
         });
     });
