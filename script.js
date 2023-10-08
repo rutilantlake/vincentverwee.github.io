@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var button = document.getElementById("clickMe");
-
-    // listener
-    button.addEventListener("click", function () {
-        // execute when clicked
-        alert("milan eeft dikke akka man");
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach(function (checkbox) {
+        checkbox.addEventListener("change", function () {
+            if (this.checked) {
+                alert("You clicked " + this.id);
+            }
+        });
     });
 });

@@ -1,16 +1,27 @@
-html {
-    height: 100%;
-    width: 100%;
-  }
-  
-  
-  #clickMe {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="checkbox"]:checked + label {
     background-color: #3498db;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
+    border: 1px solid #3498db;
+}
