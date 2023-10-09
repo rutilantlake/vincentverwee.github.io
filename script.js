@@ -9,3 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function validateForm() {
+    // Get the entered username and password
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Check if the username and password match the criteria
+    if (username === "vincent" && password === "1234") {
+        // Redirect to the home page (or any other desired page)
+        window.location.href = "home.html";
+        return false; // Prevent form submission
+    } else {
+        alert("Invalid username or password. Please try again.");
+        return false; // Prevent form submission
+    };
+};
