@@ -16,7 +16,7 @@ function validateForm() {
     var password = document.getElementById("password").value;
 
     // Check if the username and password match the criteria
-    if (username === "vincent" && password === "1234") {
+    if (username === "vincent" && password === "6969") {
         // Redirect to the home page (or any other desired page)
         window.location.href = "home.html";
         return false; // Prevent form submission
